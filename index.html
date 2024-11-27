@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Condiciones</title>
+    <link rel="stylesheet" href="colors.css">
+    <script src="logic.js" defer></script>
+</head>
+<body>
+    <div class="circles-container">
+        <div class="circle">
+            <img src="ca-icon.jpg" alt="CA Icon">
+            <span id="ca-value">10</span>
+        </div>
+        <div class="circle">
+            <img src="ataque-icon.png" alt="Ataque Icon">
+            <span id="ataque-value">5</span>
+        </div>
+        <div class="circle">
+            <img src="dmg.png" alt="Daño Icon">
+            <span id="daño-value">0</span>
+        </div>
+    </div>
+    <div class="card">
+        <h2>Arma</h2>
+        <select>
+            <option id="espada">Espada 2d6</option>
+            <option id="arco">Arco 1d8</option>
+            <option id="hachota">Hachota 1d12</option>
+        </select>
+    </div>   
+    <div class="card">
+        <h2>Dos manos</h2>
+        <p>Estás atacando con dos manos.</p>
+        <label><input type="checkbox" id="dosmanos"> Wuoooogh</label>
+    </div>
+    <div class="card">
+        <h2>Ataque Poderoso</h2>
+        <p>Resta 1 al ataque y suma 2 al daño.</p>
+        <label><input type="checkbox" id="ataque-poderoso"> Activar</label>
+    </div>
+    <div class="card">
+        <h2>Furia</h2>
+        <p>Suma 2 al ataque.</p>
+        <label><input type="checkbox" id="furia"> Activar</label>
+    </div>
+    <div class="card">
+        <h2>Condición Genérica 1</h2>
+        <p>Personaliza su efecto.</p>
+        <label><input type="checkbox" id="condicion1"> Activar</label>
+    </div>
+    <div class="card">
+        <h2>Condición Genérica 2</h2>
+        <p>Personaliza su efecto.</p>
+        <label><input type="checkbox" id="condicion2"> Activar</label>
+    </div>
+</body>
+</html>
